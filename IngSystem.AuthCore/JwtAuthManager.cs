@@ -45,6 +45,13 @@ namespace IngSystem.AuthCore
             }
         }
 
+        /// <summary>
+        /// Test
+        /// </summary>
+        /// <param name="username"></param>
+        /// <param name="claims"></param>
+        /// <param name="now"></param>
+        /// <returns></returns>
         public JwtAuthResult GenerateTokens(string username, Claim[] claims, DateTime now)
         {
             var shouldAddAudienceClaim = string.IsNullOrWhiteSpace(claims?.FirstOrDefault(x => x.Type == JwtRegisteredClaimNames.Aud)?.Value);
