@@ -7,11 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApplicationServices", "Appl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{6BFC0D26-AC94-4292-ACFB-895EBBBDE302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IngSystem.WebService", "IngSystem.WebService\IngSystem.WebService.csproj", "{C00245B1-89F3-48A4-A668-FBD1C10EF6EF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IngSystem.AuthCore", "IngSystem.AuthCore\IngSystem.AuthCore.csproj", "{EB4F980C-1E2C-4D9F-90AA-08699917218A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IngSystem.AuthCore", "IngSystem.AuthCore\IngSystem.AuthCore.csproj", "{EB4F980C-1E2C-4D9F-90AA-08699917218A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{5CF77D07-1558-4927-8748-BAD84A757CE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IngSystem.Api", "IngSystem.Api\IngSystem.Api.csproj", "{6FB5892C-7557-49C3-9B13-B13801D9FA8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,21 +19,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C00245B1-89F3-48A4-A668-FBD1C10EF6EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C00245B1-89F3-48A4-A668-FBD1C10EF6EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C00245B1-89F3-48A4-A668-FBD1C10EF6EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C00245B1-89F3-48A4-A668-FBD1C10EF6EF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EB4F980C-1E2C-4D9F-90AA-08699917218A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EB4F980C-1E2C-4D9F-90AA-08699917218A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB4F980C-1E2C-4D9F-90AA-08699917218A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB4F980C-1E2C-4D9F-90AA-08699917218A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FB5892C-7557-49C3-9B13-B13801D9FA8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FB5892C-7557-49C3-9B13-B13801D9FA8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FB5892C-7557-49C3-9B13-B13801D9FA8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FB5892C-7557-49C3-9B13-B13801D9FA8C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{C00245B1-89F3-48A4-A668-FBD1C10EF6EF} = {5C96A6CB-91E5-47D3-95E5-27E7006337DE}
 		{EB4F980C-1E2C-4D9F-90AA-08699917218A} = {6BFC0D26-AC94-4292-ACFB-895EBBBDE302}
+		{6FB5892C-7557-49C3-9B13-B13801D9FA8C} = {5C96A6CB-91E5-47D3-95E5-27E7006337DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4877491E-1EAF-4BF2-BC62-E7CFDF1FBB0F}

@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace IngSystem.WebService
+namespace IngSystem.Api
 {
     public class Program
     {

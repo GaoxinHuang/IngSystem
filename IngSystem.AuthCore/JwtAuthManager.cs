@@ -1,4 +1,5 @@
-﻿using IngSystem.AuthCore.Models;
+﻿using IngSystem.AuthCore.Interfaces;
+using IngSystem.AuthCore.Models;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Concurrent;
@@ -131,7 +132,4 @@ namespace IngSystem.AuthCore
         }
     }
 
-    public interface IJwtAuthManager
-    {
-    }
 }
