@@ -38,7 +38,8 @@ namespace IngSystem.Api
                 x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
             }).AddJwtBearer(x =>
             {
-                x.RequireHttpsMetadata = false; // 不知道就是要设置成 false, true 就报错
+                // 不知道为什么, 有时候就是要设置成 false, true 就报错
+                x.RequireHttpsMetadata = true; 
                 x.SaveToken = true;
                 x.TokenValidationParameters = new TokenValidationParameters
                 {
