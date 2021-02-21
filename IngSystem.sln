@@ -9,9 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{6BFC0D26-A
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IngSystem.AuthCore", "IngSystem.AuthCore\IngSystem.AuthCore.csproj", "{EB4F980C-1E2C-4D9F-90AA-08699917218A}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{5CF77D07-1558-4927-8748-BAD84A757CE1}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IngSystem.Api", "IngSystem.Api\IngSystem.Api.csproj", "{6FB5892C-7557-49C3-9B13-B13801D9FA8C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IngSystem.Api", "IngSystem.Api\IngSystem.Api.csproj", "{6FB5892C-7557-49C3-9B13-B13801D9FA8C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

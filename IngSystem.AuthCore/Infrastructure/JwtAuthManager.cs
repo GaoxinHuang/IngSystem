@@ -1,4 +1,4 @@
-﻿using IngSystem.AuthCore.Interfaces;
+﻿using IngSystem.AuthCore.Infrastructure.Interfaces;
 using IngSystem.AuthCore.Models;
 using Microsoft.IdentityModel.Tokens;
 using System;
@@ -9,8 +9,9 @@ using System.Linq;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.Json.Serialization;
 
-namespace IngSystem.AuthCore
+namespace IngSystem.AuthCore.Infrastructure
 {
     public class JwtAuthManager : IJwtAuthManager
     {
@@ -35,8 +36,11 @@ namespace IngSystem.AuthCore
                 _usersRefreshTokens.TryRemove(expiredToken.Key, out _);
             }
         }
-
-        // can be more specific to ip, user agent, device name, etc.
+        /// <summary>
+        /// 原来: can be more specific to ip, user agent, device name, etc.
+        /// 当 logout 的时候, 就要移除那个device的 refresh token. 这里也可以传递 refresh token 去 logout 
+        /// </summary>
+        /// <param name="userName"></param>
         public void RemoveRefreshTokenByUserName(string userName)
         {
             var refreshTokens = _usersRefreshTokens.Where(x => x.Value.UserName == userName).ToList();
